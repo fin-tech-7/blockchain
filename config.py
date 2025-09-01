@@ -1,1 +1,2 @@
 KAKAO_ADMIN_KEY = "cdaa727f51faba4a781181f05fb406f5"
+transaction_hash = "0xefb659e10249318be9ca9abaf7d19516a94695dc04e6d854482b3e4b01593ff4"
