@@ -32,11 +32,6 @@ def get_donations(limit: int = 20):
     r.raise_for_status()
     return r.json()["items"]
 
-def get_disbursements(campaign_id: str):
-    r = requests.get(f"{BACKEND_BASE}/disbursements", params={"campaignId": campaign_id}, timeout=20)
-    r.raise_for_status()
-    return r.json()
-
 def get_my_disbursement(order_id: str):
     """내 기부에 대한 분배 내역 조회 (백엔드에서 orderId→campaign 매핑 필요)"""
     r = requests.get(f"{BACKEND_BASE}/disbursements", params={"orderId": order_id}, timeout=20)
