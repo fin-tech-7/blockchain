@@ -5,7 +5,7 @@ import requests
 import streamlit as st
 
 BACKEND_BASE = os.getenv("BACKEND_BASE", "http://localhost:8000/api/v1")
-APP_BASE_URL = os.getenv("APP_BASE_URL", "http://localhost:8502")  # returnUrl
+APP_BASE_URL = os.getenv("APP_BASE_URL", "http://localhost:8501")  # returnUrl
 
 st.set_page_config(page_title="Donation Demo", layout="wide")
 
